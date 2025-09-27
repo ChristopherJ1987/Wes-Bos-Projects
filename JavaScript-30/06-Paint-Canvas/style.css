@@ -1,0 +1,17 @@
+html, body {
+    margin: 0;
+}
+h1 {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    z-index: 100;
+    font-family: cursive;
+}
+p {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    z-index: 100;
+    font-family: cursive;
+}

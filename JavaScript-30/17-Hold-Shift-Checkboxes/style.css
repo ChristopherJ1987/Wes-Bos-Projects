@@ -1,0 +1,49 @@
+html {
+    font-family: sans-serif;
+    background: #20002c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #cbb4d4, #20002c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #cbb4d4, #20002c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.inbox {
+    max-width: 400px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 10px 10px 0 rgba(0,0,0,0.1);
+    background: #757F9A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #D7DDE8, #757F9A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #D7DDE8, #757F9A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #F1F1F1;
+}
+.item:last-child {
+    border-bottom: 0;
+}
+input:checked + p {
+    background: #F9F9F9;
+    text-decoration: line-through;
+}
+input[type="checkbox"] {
+    margin: 20px;
+}
+p {
+    margin: 0;
+    padding: 20px;
+    transition: background 0.2s;
+    flex: 1;
+    font-family: 'helvetica neue';
+    font-size: 20px;
+    font-weight: 200;
+    border-left: 1px solid #D1E2FF;
+}
+
+.header {
+    padding: 4rem;
+    color: #F1F1F1;
+    text-align: center;
+    font-family: "helvetica neue";
+    text-shadow: 1px 1px 1px #000, 3px 3px 5px #F1F1F1; 
+}

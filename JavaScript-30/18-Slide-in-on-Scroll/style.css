@@ -1,0 +1,88 @@
+html {
+    box-sizing: border-box;
+    font-family: 'helvetica neue';
+    font-size: 20px;
+    font-weight: 200;
+    background: #52c234;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #061700, #52c234);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #061700, #52c234); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+body {
+    margin: 0;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+h1 {
+    margin-top: 0;
+    --g: 4rem;     /* the gap */
+    --b: 1rem;    /* border thickness*/
+    --c: #669706; /* the color */
+    padding: calc(var(--g) + var(--b));
+    --_c: #0000 0 25%, var(--c) 0 50%;
+    --_g1: repeating-linear-gradient(90deg ,var(--_c)) repeat-x;
+    --_g2: repeating-linear-gradient(180deg,var(--_c)) repeat-y;
+    background:
+    var(--_g1) var(--_p, 25%) 0   ,var(--_g2) 0    var(--_p,125%),
+    var(--_g1) var(--_p,125%) 100%,var(--_g2) 100% var(--_p, 25%);
+    background-size: 200% var(--b),var(--b) 200%;
+    filter: grayscale(50%);
+    transition: .3s;
+    background-color: hsla(102, 70%, 26%, 0.3);
+}
+h1:hover {
+    --_p: 75%;
+    filter: grayscale(0%);
+    text-decoration: underline wavy #669706;
+    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+}
+.title {
+    padding: 0 4rem;
+}
+.article {
+    padding: 0 4rem;
+}
+.site-wrap {
+    max-width: 75%;
+    margin: 100px auto;
+    background: white;
+    padding: 40px;
+    text-align: justify;
+    border: dashed #658e18;
+}
+.align-left {
+    float: left;
+    margin-right: 20px;
+}
+.align-right {
+    float: right;
+    margin-left: 20px;
+}
+.slide-in {
+    opacity: 0;
+    transition: all .5s;
+}
+.align-left.slide-in {
+    transform: translateX(-30%) scale(0.95);
+}
+.align-right.slide-in {
+    transform: translateX(30%) scale(0.95);
+}
+.slide-in.active {
+    opacity: 1;
+    transform: translateX(0%) scale(1);
+}
+footer {
+    color: #fff;
+    display: flex;
+    font-weight: 300;
+    align-items: last baseline;
+    background: var(--main-gray);
+    justify-content: space-between;
+    padding: 1.25rem 2rem 1.5rem 2rem;
+    border-top: 4px solid var(--main-red);
+}
+footer > p {
+    margin: 2rem;
+}
